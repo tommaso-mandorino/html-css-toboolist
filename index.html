@@ -2,102 +2,125 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Boolean Toboolist" />
-  <meta name="keywords" content="Boolean, Toboolist" />
-  <meta name="author" content="The Booleaner" />
+  <meta name="description" content="Boolean Toboolist">
+  <meta name="keywords" content="Boolean, Toboolist">
+  <meta name="author" content="The Booleaner">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Toboolist</title>
 </head>
 
 <body>
   <!-- Header section -->
-  <header>
+  <header class="bg-white">
+
     <!-- Logo -->
-    <img id="logo-toboolist" src="./img/logo.png" alt="Toboolist logo" />
+    <img id="logo" src="./img/logo.png" alt="Toboolist logo">
 
     <!-- Title -->
     <h1>Toboolist</h1>
+
   </header>
 
-  <!-- Container -->
+  <!-- Container box -->
   <div class="container">
 
     <!-- Button section -->
-    <section id="section-buttons">
-      <button class="button-add-task" type="button">Add Task</button>
-      <button class="button-add-section" type="button">Add Section</button>
-    </section>
+    <div class="section-buttons bg-white brt-10">
 
-    <!-- Main section of the document -->
-    <main>
-      <!-- Task list section -->
-      <section>
+      <button class="button-add-task br-10" type="button">Add Task</button>
 
-        <!-- New task list -->
-        <details open>
-          <summary>New Task</summary>
-          <ul>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Quarterly Newsletter</span><span
-                class="task-category category-editorial">Editorial</span>
-            </li>
-          </ul>
-        </details>
+      <button class="button-add-section br-10" type="button">Add Section</button>
 
-        <!-- Today task list -->
-        <details open>
-          <summary>Today</summary>
-          <ul>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Recluting blog post</span><span
-                class="task-category category-editorial">Editorial</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Mobile app launch</span><span
-                class="task-category category-q1-goals">Q1 Goals</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-to-do">&cross;</span><span class="task-text">Interview John H.</span><span
-                class="task-category category-recruiting">Recruiting</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Summit update to mobile
-                storefronts</span><span class="task-category category-mobile">Mobile</span>
-            </li>
-          </ul>
-        </details>
+    </div>
 
-        <!-- Upcoming task list -->
-        <details open>
-          <summary>Upcoming</summary>
-          <ul>
-            <li class="task">
-              <span class="task-status task-to-do">&cross;</span><span class="task-text">Schedule meeting with
-                Alex</span><span class="task-category category-none">No category</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Homepage refresh</span><span
-                class="task-category category-website">Website</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Onboard new Sales team
-                members</span><span class="task-category category-sales">Sales</span>
-            </li>
-            <li class="task">
-              <span class="task-status task-done">&check;</span><span class="task-text">Review editorial
-                calendar</span><span class="task-category category-editorial">Editorial</span>
-            </li>
-          </ul>
-        </details>
+    <!-- Main section of the document where tasks are displayed -->
+    <main class="bg-white brb-10">
 
-      </section>
+      <!-- New tasks list -->
+      <details open>
+
+        <summary>New Task</summary>
+
+        <ul>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Quarterly Newsletter</span><span
+              class="task-category category-editorial">Editorial</span>
+          </li>
+
+        </ul>
+
+      </details>
+
+      <!-- Today tasks list -->
+      <details open>
+
+        <summary>Today</summary>
+
+        <ul>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Recluting blog post</span><span
+              class="task-category category-editorial">Editorial</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Mobile app launch</span><span
+              class="task-category category-q1-goals">Q1 Goals</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-to-do">&cross;</span><span class="task-text">Interview John H.</span><span
+              class="task-category category-recruiting">Recruiting</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Summit update to mobile
+              storefronts</span><span class="task-category category-mobile">Mobile</span>
+          </li>
+
+        </ul>
+
+      </details>
+
+      <!-- Upcoming tasks list -->
+      <details open>
+
+        <summary>Upcoming</summary>
+
+        <ul>
+
+          <li class="task">
+            <span class="task-status task-to-do">&cross;</span><span class="task-text">Schedule meeting with
+              Alex</span><span class="task-category category-none">No category</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Homepage refresh</span><span
+              class="task-category category-website">Website</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Onboard new Sales team
+              members</span><span class="task-category category-sales">Sales</span>
+          </li>
+
+          <li class="task">
+            <span class="task-status task-done">&check;</span><span class="task-text">Review editorial
+              calendar</span><span class="task-category category-editorial">Editorial</span>
+          </li>
+
+        </ul>
+
+      </details>
 
     </main>
+
   </div>
 
 </body>

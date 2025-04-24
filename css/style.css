@@ -4,57 +4,51 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 /* Utility classes */
 
-/* Generic tags */
-
-body {
-  background-color: #f6f8f9;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-}
-
-header {
-  padding: 1% 2%;
+/* White background color */
+.bg-white {
   background-color: white;
 }
 
+/* Border radius */
+/* All 10px */
+.br-10 {
+  border-radius: 10px;
+}
+/* Top 10px */
+.brt-10 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* Bottom 10px */
+.brb-10 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Generic tags */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: #f6f8f9;
+}
+header {
+  padding: 1% 2%;
+}
 main
 {
   margin-bottom: 1%;
-  padding: 1% 7% 1.5%;
-  border-radius: 1%;
-  background-color: white;
+  padding: 3% 7% 1.5%;
 }
-
 h1 {
   display: inline;
-  vertical-align: middle;
 }
-
 details {
   padding: 1% 0;
-}
-
-/* Buttons */
-
-button {
-  padding: 1% 1.5%;
-  border: 1px solid;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-.button-add-task {
-  background-color: #1e90ff;
-  color: white;
-}
-
-.button-add-section {
-  background-color: transparent;
-  color: #808080
 }
 
 summary{
@@ -65,20 +59,41 @@ ul {
   list-style-type: none;
 }
 
-/* Classes */
+/* Buttons */
+button {
+  padding: 1% 1.5%;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 18px;
+}
+/* Add task button */
+.button-add-task {
+  background-color: #1e90ff;
+  color: white;
+}
+/* Add section button */
+.button-add-section {
+  background-color: transparent;
+  color: #808080
+}
 
+/* Classes */
 .container {
   margin: 3% auto 1%;
   max-width: 1200px;
+}
+
+/* Section with buttons */
+.section-buttons {
+  margin-bottom: 0.3%;
+  padding: 1.5% 7% 1%;
 }
 
 /* Task */
 .task {
   margin: 2% 0;
 }
-
 /* Task status */
-
 /* General */
 .task-status {
   border: 1px solid;
@@ -87,85 +102,60 @@ ul {
   width: 2rem;
   height: 2rem;
   text-align: center;
-  vertical-align: middle;
 }
-
 /* To do */
 .task-status.task-to-do{
   color: red;
 }
-
 /* Done */
 .task-status.task-done{
   color: green
 }
-
 /* Task text */
 .task-text {
   padding: 0 1%;
-  vertical-align: middle;
 }
 
 /* Task categories */
-
 /* General */
 .task-category {
   padding: 0.8% 1.5%;
   border-radius: 15px;
   color: white;
   font-size: 15px;
-  vertical-align: middle;
 }
-
-/* Specific */
-
-/* No category */
+/* Tasks with no category */
 .task-category.category-none {
   background-color: black;
-  color: white;
   display: none;
 }
-/* Editorial */
+/* Editorial category */
 .task-category.category-editorial {
   background-color: #45abea;
 }
-
-/* Q1 Goals */
+/* Q1 Goals category */
 .task-category.category-q1-goals {
   background-color: #9c72e4;
 }
-
-/* Recruiting */
+/* Recruiting category */
 .task-category.category-recruiting {
   background-color: #64c0a9;
 }
-
-/* Mobile */
+/* Mobile category */
 .task-category.category-mobile {
   background-color: #f29e33;
 }
-
-/* Website */
+/* Website category */
 .task-category.category-website {
   background-color: #d863a1;
 }
-
-/* Sales */
+/* Sales category */
 .task-category.category-sales {
   background-color: #b0c926;
 }
 
 /* ID selectors */
-
 /* Toboolist logo */
-#logo-toboolist {
-  vertical-align: middle;
+#logo {
   width: 4%;
-}
-
-/* Section with buttons */
-#section-buttons{
-  background-color: white;
-  margin-bottom: 0.1%;
-  padding: 1.5% 7% 1%;
 }
