@@ -10,48 +10,154 @@
 
 /* Generic tags */
 
+body {
+  background-color: #f6f8f9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
 header {
-  background-color: red;
+  padding: 1% 2%;
+  background-color: white;
 }
 
 main
 {
-  border-radius: 1rem;
+  margin: 5% 20% 1%;
+  padding: 1% 3% 1.5%;
+  border-radius: 1%;
+  background-color: white;
 }
 
 h1 {
-  background-color: yellow;
+  display: inline;
+  vertical-align: middle;
+}
+
+details {
+  padding: 1% 0;
+}
+
+/* Buttons */
+
+button {
+  padding: 0.5% 1%;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.button-add-task {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.button-add-section {
+  background-color: transparent;
+  color: #808080
+}
+
+summary{
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Classes */
 
+/* Task */
+.task {
+  margin: 2% 0;
+}
+
+/* Task status */
+
+/* General */
+.task-status {
+  border: 0.1rem solid;
+  border-radius: 50%;
+
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* To do */
+.task-status.task-to-do{
+  color: red;
+}
+
+/* Done */
+.task-status.task-done{
+  color: green
+}
+
+/* Task text */
+.task-text {
+  padding: 0 0.5rem;
+}
 
 /* Task categories */
-.editorial{
-  background-color: ;
-}
-.q1-goals{
-  background-color: ;
-}
-.recruiting{
-  background-color: ;
-}
-.mobile{
-  background-color: ;
-}
-.website{
-  background-color: ;
-}
-.sales{
-  background-color: ;
+
+/* General */
+.task-category {
+  padding: 0.8% 1.5%;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
 }
 
-/* IDs */
+/* Specific */
 
+/* No category */
+.task-category.category-none {
+  background-color: black;
+  color: white;
+  display: none;
+}
+/* Editorial */
+.task-category.category-editorial {
+  background-color: #45abea;
+}
+
+/* Q1 Goals */
+.task-category.category-q1-goals {
+  background-color: #9c72e4;
+}
+
+/* Recruiting */
+.task-category.category-recruiting {
+  background-color: #64c0a9;
+}
+
+/* Mobile */
+.task-category.category-mobile {
+  background-color: #f29e33;
+}
+
+/* Website */
+.task-category.category-website {
+  background-color: #d863a1;
+}
+
+/* Sales */
+.task-category.category-sales {
+  background-color: #b0c926;
+}
+
+/* ID selectors */
+
+/* Toboolist logo */
 #logo-toboolist {
-  background-color: green;
+  vertical-align: middle;
+  width: 5%;
 }
 
+/* Section with buttons */
 #section-buttons{
-  border-bottom: 1px solid red;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+  border-bottom: 3px solid #f6f8f9;
 }
