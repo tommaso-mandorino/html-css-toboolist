@@ -1,53 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Boolean Toboolist" />
-    <meta name="keywords" content="Boolean, Toboolist" />
-    <meta name="author" content="The Booleaner" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta name="description" content="Boolean Toboolist" />
+  <meta name="keywords" content="Boolean, Toboolist" />
+  <meta name="author" content="The Booleaner" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Toboolist</title>
-  </head>
-  <body>
-    <!-- Header section -->
-    <header>
-      <!-- Logo -->
-      <img id="logo" src="./img/logo.png" alt="Toboolist logo" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-      <!-- Title -->
-      <h1>Toboolist</h1>
-    </header>
+  <title>Toboolist</title>
+</head>
 
-    <!-- Main section -->
-    <main>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo -->
+    <img id="logo-toboolist" src="./img/logo.png" alt="Toboolist logo" />
+
+    <!-- Title -->
+    <h1>Toboolist</h1>
+  </header>
+
+  <!-- Main section of the document -->
+  <main>
+
+    <!-- Button section -->
+    <section id="section-buttons">
+      <button type="button">Add Task</button>
+      <button type="button">Add Section</button>
+    </section>
+
+    <!-- Task list section -->
+    <section>
+
+      <!-- New task list -->
       <details open>
         <summary>New Task</summary>
         <ul>
-          <li>Quarterly Newsletter</li>
+          <li>
+            <span class="done"></span><span>Quarterly Newsletter</span><span class="">Editorial</span>
+          </li>
         </ul>
       </details>
+
+      <!-- Today task list -->
       <details open>
         <summary>Today</summary>
         <ul>
-          <li>Recluting blog post</li>
-          <li>Mobile app launch</li>
-          <li>Interview John H.</li>
-          <li>Summit update to mobile storefronts</li>
+          <li>
+            <span class="done"></span><span>Recluting blog post</span><span class="">Editorial</span>
+          </li>
+          <li>
+            <span class="done"></span><span>Mobile app launch</span><span class="">Q1 Goals</span>
+          </li>
+          <li>
+            <span class="to-do"></span><span>Interview John H.</span><span class="">Recruiting</span>
+          </li>
+          <li>
+            <span class="done"></span><span>Summit update to mobile storefronts</span><span class="">Mobile</span>
+          </li>
         </ul>
       </details>
+
+      <!-- Upcoming task list -->
       <details open>
         <summary>Upcoming</summary>
         <ul>
-          <li>Schedule meeting with Alex</li>
-          <li>Homepage refresh</li>
-          <li>Onboard new Sales team members</li>
-          <li>Review editorial calendar</li>
+          <li>
+            <span class="to-do"></span><span>Schedule meeting with Alex</span><span class=""></span>
+          </li>
+          <li>
+            <span class="done"></span><span>Homepage refresh</span><span class="">Website</span>
+          </li>
+          <li>
+            <span class="done"></span><span>Onboard new Sales team members</span><span class="">Sales</span>
+          </li>
+          <li>
+            <span class="done"></span><span>Review editorial calendar</span><span class="">Editorial</span>
+          </li>
         </ul>
       </details>
-    </main>
-  </body>
+
+    </section>
+
+  </main>
+</body>
+
 </html>

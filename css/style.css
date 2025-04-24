@@ -1,0 +1,57 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Utility classes */
+
+/* Generic tags */
+
+header {
+  background-color: red;
+}
+
+main
+{
+  border-radius: 1rem;
+}
+
+h1 {
+  background-color: yellow;
+}
+
+/* Classes */
+
+
+/* Task categories */
+.editorial{
+  background-color: ;
+}
+.q1-goals{
+  background-color: ;
+}
+.recruiting{
+  background-color: ;
+}
+.mobile{
+  background-color: ;
+}
+.website{
+  background-color: ;
+}
+.sales{
+  background-color: ;
+}
+
+/* IDs */
+
+#logo-toboolist {
+  background-color: green;
+}
+
+#section-buttons{
+  border-bottom: 1px solid red;
+}
